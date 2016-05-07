@@ -197,6 +197,6 @@ def ecrire():
         elif lettre == " ":
             x+=6
         else :
-            print("Veuillez ne pas mettre d accent ou d autres caracteres que des lettres")
+            print("Veuillez ne pas mettre d'accents ou d'autres caracteres que des lettres")
 
 ecrire()
