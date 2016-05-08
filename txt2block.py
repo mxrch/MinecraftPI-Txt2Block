@@ -10,7 +10,7 @@ def ecrire():
     #On définit la fonction qui va écrire le texte
     x, y, z = mc.player.getPos() #On stocke la position du joueur dans les variables x y z
     bloc = int(input("Quel bloc voulez-vous utiliser ? Veuillez entrer son id : ")) #On demande à l'utilisateur quel bloc utiliser puis on sauvegarde son id dans la variable "bloc"
-    texte = input("Que voulez vous ecrire ? ")
+    texte = input("Que voulez vous écrire ? ")
     mc.postToChat("Vous avez choisi : " + texte + " Avec le bloc id " + str(bloc))
     x = x-10
     z = z-16
@@ -197,6 +197,6 @@ def ecrire():
         elif lettre == " ":
             x+=6
         else :
-            print("Veuillez ne pas mettre d'accents ou d'autres caracteres que des lettres")
+            print("Veuillez ne pas mettre d'accents ou d'autres caractères que des lettres")
 
 ecrire()
