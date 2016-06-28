@@ -1,17 +1,20 @@
-# On importe les librairies de Minecraft Pi
+# On importe les librairies de Minecraft Pi et tkinter
 import mcpi.minecraft as minecraft
 import mcpi.block as block
+from tkinter import *
  
 mc = minecraft.Minecraft.create()
 
 #Fonctions
  
 def ecrire():
+    "Fonction qui convertit un string en blocs"
     #On définit la fonction qui va écrire le texte
+    sta.set("Statut : En attente...")
     x, y, z = mc.player.getPos() #On stocke la position du joueur dans les variables x y z
-    bloc = int(input("Quel bloc voulez-vous utiliser ? Veuillez entrer son id : ")) #On demande à l'utilisateur quel bloc utiliser puis on sauvegarde son id dans la variable "bloc"
-    texte = input("Que voulez vous écrire ? ")
-    mc.postToChat("Vous avez choisi : " + texte + " Avec le bloc id " + str(bloc))
+    texte = texte2.get()
+    bloc = int(texte4.get())
+    mc.postToChat('Vous avez choisi : "' + texte + '" Avec le bloc id ' + str(bloc))
     x = x-10
     z = z-16
     for lettre in texte:
@@ -198,5 +201,26 @@ def ecrire():
             x+=6
         else :
             print("Veuillez ne pas mettre d'accents ou d'autres caractères que des lettres")
+        sta.set("Statut : Terminé !")
 
-ecrire()
+master = Tk()
+wel = Label(master, width=50, height=5, text='txt2block by Mxrshmllw')
+wel.pack()
+texte1 = Label(master, text='Texte : ')
+texte1.pack()
+texte2 = Entry(master)
+texte2.pack()
+texte3 = Label(master, text='ID du bloc à utiliser : ')
+texte3.pack()
+texte4 = Entry(master)
+texte4.pack()
+start = Button(master, text='Commencer !', command=ecrire)
+start.pack()
+sta = StringVar()
+Label(master, textvariable=sta, fg="blue").pack()
+sta.set("Statut : En attente...")
+quitter = Button(master, text='Quitter', command=master.destroy)
+quitter.pack()
+
+master.mainloop
+master.quit()
