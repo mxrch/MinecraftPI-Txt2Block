@@ -3,6 +3,7 @@
 
 Veillez à bien être dans un monde avant de lancer le script.
 
-L'idée de base provient de mon cher ami Éric Sion.
+L'idée de base provient de mon cher ami Éric Sion. :)
 
-Enjoy ! :)
+Update 27/06/2016 :
+Ajout d'un GUI tkinter
