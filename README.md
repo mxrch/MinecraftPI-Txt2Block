@@ -1,9 +1,8 @@
-#Txt2Block
-*Voici un simple script en Python 3 pour transformer un texte string en blocs sur Minecraft pour Raspberry Pi.*
+![Picture](https://www.raspberrypi.org/app/uploads/2013/02/cropped-Pi-Edition-header1.jpg)
 
+#Txt2Block
+
+*Voici un simple script en Python 3 pour transformer un texte string en blocs sur Minecraft pour Raspberry Pi.*
 Veillez à bien être dans un monde avant de lancer le script.
 
 L'idée de base provient de mon cher ami Éric Sion. :)
-
-Update 27/06/2016 :
-Ajout d'un GUI tkinter
