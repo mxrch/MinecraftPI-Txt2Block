@@ -1,5 +1,6 @@
 ![Picture](https://www.raspberrypi.org/app/uploads/2013/02/cropped-Pi-Edition-header1.jpg)
-<hr>Txt2Block</hr>
+<hr>
+<h1>Txt2Block</h1>
 
 *Voici un simple script en Python 3 pour transformer un texte string en blocs sur Minecraft pour Raspberry Pi.*
 
