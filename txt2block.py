@@ -204,7 +204,7 @@ def ecrire():
         sta.set("Statut : Terminé !")
 
 master = Tk()
-wel = Label(master, width=50, height=5, text='txt2block by Mxrshmllw')
+wel = Label(master, width=50, height=5, text='txt2block by mxrch')
 wel.pack()
 texte1 = Label(master, text='Texte : ')
 texte1.pack()
